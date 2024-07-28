@@ -5,7 +5,11 @@ from cnnClassifier import logger
 
 STAGE_NAME = "Data Ingestion stage"
 
+<<<<<<< HEAD
 class DataIngestionTrainingPipeline:
+=======
+class DataIngestionTrainingpipeline:
+>>>>>>> 53e3e44 (data ingestion completed)
     def __init__(self):
         pass
 
@@ -22,6 +26,7 @@ class DataIngestionTrainingPipeline:
 if __name__ == '__main__':
     try:
         logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<")
+<<<<<<< HEAD
         obj = DataIngestionTrainingPipeline()
         obj.main()
         logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx===========x")
@@ -29,3 +34,11 @@ if __name__ == '__main__':
 
          logger.exception(e)
          raise e
+=======
+        obj = DataIngestionTrainingpipeline()
+        obj.main()
+        logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx===========")
+    except Exception as e:
+        logger.exception (e)
+        raise e
+>>>>>>> 53e3e44 (data ingestion completed)

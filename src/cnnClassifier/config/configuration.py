@@ -1,4 +1,5 @@
 from cnnClassifier.constants import *
+<<<<<<< HEAD
 import os
 from pathlib import Path
 from cnnClassifier.utils.common import read_yaml, create_directories
@@ -9,6 +10,10 @@ from cnnClassifier.entity.config_entity import (DataIngestionConfig,
                                                 EvaluationConfig)
                                                 
                                                 
+=======
+from cnnClassifier.utils.common import read_yaml, create_directories
+from cnnClassifier.entity.config_entity import DataIngestionConfig
+>>>>>>> 53e3e44 (data ingestion completed)
 
 
 
@@ -23,7 +28,10 @@ class ConfigurationManager:
 
         create_directories([self.config.artifacts_root])
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 53e3e44 (data ingestion completed)
     
     def get_data_ingestion_config(self) -> DataIngestionConfig:
         config = self.config.data_ingestion
@@ -31,6 +39,7 @@ class ConfigurationManager:
         create_directories([config.root_dir])
 
         data_ingestion_config = DataIngestionConfig(
+<<<<<<< HEAD
             root_dir=config.root_dir,
             source_URL=config.source_URL,
             local_data_file=config.local_data_file,
@@ -121,3 +130,12 @@ class ConfigurationManager:
     
 
       
+=======
+            root_dir = config.root_dir,
+            source_URL = config.source_URL,
+            local_data_file = config.local_data_file,
+            unzip_dir = config.unzip_dir,
+        )
+
+        return data_ingestion_config
+>>>>>>> 53e3e44 (data ingestion completed)

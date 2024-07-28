@@ -5,6 +5,7 @@ data_ingestion:
   root_dir: artifacts/data_ingestion
   source_URL: https://github.com/Rahul786Patidar/Chicken_disease_classification/raw/main/Chicken-fecal-images.zip
   local_data_file: artifacts/data_ingestion/data.zip
+<<<<<<< HEAD
   unzip_dir: artifacts/data_ingestion
 
 
@@ -27,3 +28,6 @@ prepare_callbacks:
 training:
   root_dir: artifacts/training
   trained_model_path: artifacts/training/model.h5
+=======
+  unzip_dir: artifacts/data_ingestion
+>>>>>>> 53e3e44 (data ingestion completed)

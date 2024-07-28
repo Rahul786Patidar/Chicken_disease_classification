@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import sys
 sys.path.append('./cnnClassifier')
 from cnnClassifier.pipeline.stage_01_data_ingestion import DataIngestionTrainingPipeline
@@ -7,11 +8,16 @@ from cnnClassifier.pipeline.stage_03_training import ModelTrainingPipeline
 from cnnClassifier.pipeline.stage_04_evaluation import EvaluationPipeline
 
 
+=======
+from cnnClassifier import logger
+from cnnClassifier.pipeline.stage_01_data_ingestion import DataIngestionTrainingpipeline
+>>>>>>> 53e3e44 (data ingestion completed)
 
 
 STAGE_NAME = "Data Ingestion stage"
 try:
     logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<")
+<<<<<<< HEAD
     data_ingestion = DataIngestionTrainingPipeline()
     data_ingestion.main()
     logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx===========x")
@@ -55,4 +61,11 @@ try:
 
 except Exception as e:
         logger.exception(e)
+=======
+    data_ingestion = DataIngestionTrainingpipeline()
+    data_ingestion.main()
+    logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx===========")
+except Exception as e:
+        logger.exception (e)
+>>>>>>> 53e3e44 (data ingestion completed)
         raise e

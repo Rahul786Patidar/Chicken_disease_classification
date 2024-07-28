@@ -6,6 +6,7 @@ class DataIngestionConfig:
     root_dir: Path
     source_URL: str
     local_data_file: Path
+<<<<<<< HEAD
     unzip_dir: Path
 
 
@@ -48,3 +49,6 @@ class EvaluationConfig:
     params_image_size: list
     params_batch_size: int
 
+=======
+    unzip_dir: Path
+>>>>>>> 53e3e44 (data ingestion completed)

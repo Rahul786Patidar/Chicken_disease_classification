@@ -16,7 +16,11 @@ import base64
 def read_yaml(path_to_yaml:Path) ->ConfigBox:
     """reads yaml file and returns
 
+<<<<<<< HEAD
     Args: 
+=======
+    Args:
+>>>>>>> 53e3e44 (data ingestion completed)
         Path_to_yaml (str): path like input
         
     Raises:
