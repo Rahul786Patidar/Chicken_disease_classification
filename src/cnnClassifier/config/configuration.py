@@ -7,6 +7,7 @@ from cnnClassifier.entity.config_entity import (DataIngestionConfig,
                                                 PrepareCallbacksConfig,
                                                 TrainingConfig)
                                                 
+                                                
 
 
 
@@ -99,6 +100,8 @@ class ConfigurationManager:
         )
 
         return training_config
+   
+       
     
 
 
